@@ -1,0 +1,287 @@
+* {
+    //margin: 0;
+    //padding: 0;
+}
+
+.-image {
+    width: 100%;
+    height: 360px;
+    background: url(css/images/portrait.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: myanimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes myanimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-slider-items {
+    display: none;
+}
+
+.title {
+    animation-name: slider;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    font-weight: 650;
+    font-size: 165%;
+    font-style: oblique;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(100px);
+        margin-left: -100px;
+        color: rgba(255, 255, 255, 0);
+    }
+    100% {
+        transform: translateX(300px);
+        margin-left: -25px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.sub-title {
+    animation-name: subtitleslider;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    font-weight: 650;
+    font-size: x-large;
+    font-style: oblique;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes subtitleslider {
+    0% {
+        transform: translateX(100px);
+        margin-left: -100px;
+        color: rgba(255, 255, 255, 0);
+    }
+    100% {
+        transform: translateX(300px);
+        margin-left: -15px;
+    }
+}
+
+.intro-subtitle {
+    font-size: 140%;
+    font-weight: 500;
+    font-style: italic;
+    font-variant: small-caps;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar {
+    background: transparent;
+    opacity: 0;
+}
+
+.collapse {
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.nav-item:hover,
+.active {
+    background: gray;
+    //padding: 30px;
+    //position: sticky;
+}
+
+.navbar-reduce {
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.color {
+    background: rgba(0, 0, 0, 0.94);
+}
+
+.color button {
+    border: solid thin gray;
+}
+
+.color i {
+    color: white;
+}
+
+.title-s {
+    font-weight: 700;
+    color: rgba(0, 0, 255, 0.5);
+}
+
+.title-left {
+    border-bottom: 1px solid rgba(0, 0, 255, 0.4);
+    width: 50%
+}
+
+.ico-circle {
+    border: 7px solid blue;
+    border-radius: 100%;
+}
+
+.ico-circle i {
+    font-size: 300%;
+    font-weight: 900;
+}
+
+.ico-circle:hover {
+    color: white;
+    background-color: blue;
+    border: 10px solid rgba(255, 255, 255, 0.67);
+}
+
+.counter-ico {
+    margin-bottom: 3rem;
+}
+
+.counter-num {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.counter-num .counter {
+    font-size: 2rem;
+}
+
+.socials li {
+    list-style-type: none;
+    font-size: 130%;
+    padding: 0;
+}
+
+.socials a span i {
+    color: rgba(0, 0, 255, 0.73);
+}
+
+.socials a span i:hover {
+    color: rgba(0, 0, 255);
+    background-color: none;
+}
+
+.socials .ico-circle {
+    border: none;
+    padding: 0;
+}
+
+.list-ico li {
+    margin: 0;
+    padding: 0;
+}
+
+.copyright {
+    font-size: 90%;
+}
+
+.service_container {
+    background-color: transparent;
+    //box-shadow: none;
+}
+
+@media (min-width: 1076px) {
+    .section-counter {
+        background-color: white;
+    }
+    .ico-circle {
+        border: 7px solid blue;
+        border-radius: 100%;
+    }
+    .ico-circle i {
+        font-size: 300%;
+        font-weight: 900;
+    }
+    .ico-circle:hover {
+        color: white;
+        background-color: blue;
+        border: 10px solid rgba(255, 255, 255, 0.67);
+    }
+    .counter-ico {
+        margin-bottom: 3rem;
+    }
+    .-image {
+        width: 100%;
+        height: 636px;
+        background: url(css/images/portrait.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-name: myanimation;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+    @keyframes myanimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .navbar {
+        background: rgba(0, 0, 0);
+    }
+    .title {
+        font-size: 370%;
+    }
+    .sub-title {
+        font-size: 340%;
+    }
+    .intro-subtitle {
+        font-size: 300%;
+    }
+    .about-info p {
+        font-size: 100%;
+        line-height: 30px;
+    }
+    .services-mf h3 {
+        font-size: 270%;
+    }
+    .service-box,
+    .footer-paralax {
+        background: linear-gradient(10deg, rgba(140, 0, 255, 0.1) 20%, rgba(0, 0, 0, 0.02));
+    }
+    .section-counter {
+        background-color: transparent;
+    }
+    .color {
+        background-color: transparent;
+    }
+    .navbar-reduce {
+        background-color: rgba(0, 0, 0, 0.21);
+    }
+}
+
+@media (min-width: 476px) {
+    .service-content {
+        font-size: 100%;
+    }
+    .counter-text {
+        font-size: 70%;
+    }
+    .s-title {
+        font-size: 118%;
+    }
+    .color {
+        background-color: transparent;
+    }
+}
+
+
+}
+
+}
