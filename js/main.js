@@ -43,8 +43,7 @@
                                     }
                                     event.preventDefault();
                                     form.classList.add('was-validated');
-                                    form.setAttribute('netlify', '');
-                                }, false);
+                                    }, false);
                             });
                         }, false);
                     })();
