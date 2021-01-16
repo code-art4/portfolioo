@@ -41,8 +41,7 @@
                                         event.preventDefault();
                                         event.stopPropagation();
                                     }
-                                    event.preventDefault();
-                                    form.classList.add('was-validated');
+                                        form.classList.add('was-validated');
                                     }, false);
                             });
                         }, false);
