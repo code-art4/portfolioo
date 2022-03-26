@@ -4,7 +4,7 @@ import HeaderSocials from './headerSocials';
 import './header.css';
 
 //image imports
-import ME from "../../assets/profile.png"
+import ME from "../../assets/assets/me.png"
 
 const Header = () => {
   return (
