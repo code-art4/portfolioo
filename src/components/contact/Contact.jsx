@@ -8,23 +8,24 @@ import './contact.css';
 const Contact = () => {
     const form = useRef();
     const [message, setMessage] = useState("")
+    console.log(process.env.REACT_APP_WHATSAPP);
 
     const sendEmail = (e) => {
       e.preventDefault();
 
       emailjs
         .sendForm(
-          'service_nxha2yd',
-          'template_9tef9pf',
+          process.env.REACT_APP_ID1,
+          process.env.REACT_APP_ID2,
           form.current,
-          'yl1_EHEsw6Ub8EZDv'
+          process.env.REACT_APP_ID3
         )
         .then(
           (result) => {
             console.log(result.text);
-            setMessage({success: true, message: "Message successfully sent"});                
+            setMessage({ success: true, message: 'Message successfully sent' });
             setTimeout(() => {
-                setMessage("")
+              setMessage('');
             }, 4000);
           },
           (error) => {
@@ -33,10 +34,11 @@ const Contact = () => {
               success: false,
               message: 'An error was encountered while trying to send',
             });
-             setTimeout(() => {
-               setMessage('');
-             }, 4000);
-        })
+            setTimeout(() => {
+              setMessage('');
+            }, 4000);
+          }
+        );
         e.target.reset()
     };
 
@@ -51,7 +53,7 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>ojotriumph4@gmail.com</h5>
-            <a href="mailto:ojotriumph4@gmail.com" target="_blank">
+            <a href={process.env.REACT_APP_EMAIL} target="_blank">
               Send a message
             </a>
           </article>
@@ -69,7 +71,7 @@ const Contact = () => {
             <BsWhatsapp className="contact__option-icon" />
             <h4>Whatsapp</h4>
             <h5>+123456789</h5>
-            <a href="https://wa.me/2348086545388" target="_blank">
+            <a href={process.env.REACT_APP_WHATSAPP} target="_blank">
               Send a message
             </a>
           </article>
@@ -88,7 +90,15 @@ const Contact = () => {
             Send message
           </button>
 
-          {message !== "" ? <p className={`message ${message.success ? "success-message" : "error-message"}`}>{message.message}</p>: null}
+          {message !== '' ? (
+            <p
+              className={`message ${
+                message.success ? 'success-message' : 'error-message'
+              }`}
+            >
+              {message.message}
+            </p>
+          ) : null}
         </form>
       </div>
     </section>
