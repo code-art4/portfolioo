@@ -59,3 +59,38 @@ textarea {
     resize: none;
     color: var(--color-white)
 }
+
+.message {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* Tablets (medium devices) */
+
+@media screen and (max-width: 1024px) {
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem
+    }
+}
+
+
+/* Small screens */
+
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: var(--container-width-sm)
+    }
+}
