@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: 3,
-    image: IMG3,
+    image: IMG5,
     title: 'Website design of static website',
     github: 'https://github.com/code-art4/LaslesVPN',
     demo: '',

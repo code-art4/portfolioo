@@ -10,7 +10,7 @@
     border: 1px solid var(--color-primary);
     height: fit-content;
     transition: var(--transition);
-    width: 40% !important;
+    width: 40%;
     margin: auto;
 }
 
@@ -56,12 +56,18 @@
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1250px) {
+    .service {
+        width: 60%;
+    }
+}
+
 
 /* Tablets (medium devices) */
 
 @media screen and (max-width: 1024px) {
     .services__container {
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
         gap: 2rem
     }
     .service {
@@ -74,7 +80,10 @@
 
 @media screen and (max-width: 600px) {
     .services__container {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
         gap: 1.5rem
+    }
+    .service {
+        width: 100%;
     }
 }
