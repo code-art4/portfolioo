@@ -1,7 +1,7 @@
 import React from 'react';
 import './portfolio.css';
-import IMG1 from "../../assets/assets/portfolio1.jpg"
-import IMG2 from '../../assets/assets/portfolio2.jpg';
+import IMG1 from "../../assets/chat_app.png"
+import IMG2 from '../../assets/sunset.jpg';
 import IMG3 from '../../assets/assets/portfolio3.jpg';
 import IMG4 from '../../assets/assets/portfolio4.jpg';
 import IMG5 from '../../assets/assets/portfolio5.png';
@@ -12,46 +12,46 @@ import IMG6 from '../../assets/assets/portfolio6.jpg';
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com/',
-    demo: '',
+    image: IMG4,
+    title: 'Website authentication, Maintaining chats and profile',
+    github: 'https://github.com/code-art4/chat-app',
+    demo: 'https://chat-app-ax658vq0g-ojo-triumph.vercel.app/',
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Charts templates & infographics in Figma',
-    github: 'https://github.com/',
-    demo: '',
+    title: 'Website tracking of weather in any city',
+    github: 'https://github.com/code-art4/weather-web-app',
+    demo: 'https://lweather.netlify.app/',
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Figma dashboard UI kit for data design web apps',
-    github: 'https://github.com/',
+    title: 'Website design of static website',
+    github: 'https://github.com/code-art4/LaslesVPN',
     demo: '',
   },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Maintaining tasks and tracking progress',
-    github: 'https://github.com/',
-    demo: '',
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Charts templates & infographics in Figma',
-    github: 'https://github.com/',
-    demo: '',
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Charts templates & infographics in Figma',
-    github: 'https://github.com/',
-    demo: '',
-  },
+  // {
+  //   id: 4,
+  //   image: IMG4,
+  //   title: 'Maintaining tasks and tracking progress',
+  //   github: 'https://github.com/',
+  //   demo: '',
+  // },
+  // {
+  //   id: 5,
+  //   image: IMG5,
+  //   title: 'Charts templates & infographics in Figma',
+  //   github: 'https://github.com/',
+  //   demo: '',
+  // },
+  // {
+  //   id: 6,
+  //   image: IMG6,
+  //   title: 'Charts templates & infographics in Figma',
+  //   github: 'https://github.com/',
+  //   demo: '',
+  // },
 ];
 
 const Portfolio = () => {

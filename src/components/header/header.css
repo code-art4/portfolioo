@@ -42,6 +42,14 @@ header {
     margin-top: 1.3rem
 }
 
+.header__container-text {
+    /* position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%); */
+    margin-top: 3rem
+}
+
 
 /* me */
 

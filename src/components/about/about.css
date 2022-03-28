@@ -5,7 +5,7 @@
 }
 
 .about__me {
-    width: 100%;
+    width: 60%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
@@ -17,16 +17,19 @@
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
-    transition: var(--transition)
+    transition: var(--transition);
+    width: 80%;
+    aspect-ratio: .7/1.2;
+    transform: rotate(10deg) translateY(1rem)
 }
 
 .about__me-image:hover {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateY(1rem);
 }
 
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem
 }
 
@@ -62,6 +65,11 @@
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+}
+
+.about__content p p {
+    margin-bottom: .5rem;
+    margin-top: 0;
 }
 
 
@@ -101,6 +109,9 @@
     }
     .about__content p {
         margin: 1.5rem 0
+    }
+    .about__me-image {
+        width: 60%;
     }
 }
 
