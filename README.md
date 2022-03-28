@@ -8,4 +8,4 @@ All the branches represents different portfolio as they have different designs, 
 
 ### Advanced Configuration
 
-This section has moved here: [https://codeart4.com/](Live-server)
+[https://codeart4.com](Live-server)
