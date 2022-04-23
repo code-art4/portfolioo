@@ -30,7 +30,8 @@
 .about__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem
+    grid-gap: 1.5rem;
+    transform: translate(1000px, 0);
 }
 
 .about_card {

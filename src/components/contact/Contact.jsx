@@ -53,7 +53,7 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>ojotriumph4@gmail.com</h5>
-            <a href={process.env.REACT_APP_EMAIL} target="_blank">
+            <a href={`mailto:${process.env.REACT_APP_EMAIL}`} target="_blank">
               Send a message
             </a>
           </article>
