@@ -71,7 +71,7 @@ const Contact = () => {
             <BsWhatsapp className="contact__option-icon" />
             <h4>Whatsapp</h4>
             <h5>+123456789</h5>
-            <a href={process.env.REACT_APP_WHATSAPP} target="_blank">
+            <a href={`mailto:${process.env.REACT_APP_WHATSAPP}`} target="_blank">
               Send a message
             </a>
           </article>
